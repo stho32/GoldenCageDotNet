@@ -6,9 +6,22 @@ Dokumentation der verwendeten Test-Frameworks und Testing-Strategien.
 
 ## Unit Testing
 
-### xUnit
+### NUnit
 ```csharp
-// TODO: xUnit Setup und Konfiguration
+// NUnit Framework für Unit-Tests mit Attribut-basierter Konfiguration
+[TestFixture]
+public class ExampleTests
+{
+    [SetUp]
+    public void Setup() { }
+    
+    [Test]
+    public void SampleTest() { }
+    
+    [TestCase("value1")]
+    [TestCase("value2")]
+    public void ParameterizedTest(string input) { }
+}
 ```
 
 ### Test Structure

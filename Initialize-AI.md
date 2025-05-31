@@ -1,23 +1,30 @@
-# KI-Initialisierung
+# KI-Initialisierung für Golden Cage .NET Template
 
-Diese Datei enthält Befehle zur schnellen und effektiven Initialisierung von KI-Tools für die Arbeit mit diesem Projekt.
+Diese Datei enthält Befehle zur schnellen und effektiven Initialisierung von KI-Tools für die Arbeit mit diesem produktionsreifen .NET-Template.
 
 ## Vollständige Projekt-Initialisierung
 
 ```bash
-# Grundlegende Projektstruktur verstehen
+# Grundlegende Projektstruktur und Features verstehen
 cat README.md
 cat CLAUDE.md
 
-# Anforderungen lesen
+# Anforderungen und Spezifikationen lesen
 find ./Dokumentation/Anforderungen -name "*.md" -exec echo "=== {} ===" \; -exec cat {} \;
 
 # Architektur-Dokumentation laden
 cat ./Dokumentation/Architektur/CodeStyle.md
 cat ./Dokumentation/Architektur/ProgrammierPatterns.md
 
-# Technologie-Stack verstehen
+# Technologie-Stack und Framework-Dokumentation verstehen
 find ./Dokumentation/Technologien -name "*.md" -exec echo "=== {} ===" \; -exec cat {} \;
+
+# Datenbank-Migration System verstehen
+cat ./Source/DBMigrations/README.md
+
+# Test-Strategien analysieren
+cat ./Tests/Datenbank/README.md
+cat ./Tests/UI/README.md
 ```
 
 ## Standard-Prompts verfügbar machen
@@ -34,6 +41,27 @@ cat ./Dokumentation/Commands/Architektur-Pruefung.md
 
 # Rechtschreibprüfung Prompt
 cat ./Dokumentation/Commands/Rechtschreibpruefung.md
+```
+
+## Automatisierungs-Scripts verstehen
+
+```bash
+# Alle verfügbaren PowerShell-Scripts anzeigen
+ls -la ./Scripts/*.ps1
+
+# Build-System Dokumentation
+Get-Help ./Scripts/Build.ps1 -Examples
+
+# Datenbank-Scripts Dokumentation  
+Get-Help ./Scripts/Database-Initialize.ps1 -Examples
+Get-Help ./Scripts/Database-Migrate.ps1 -Examples
+
+# Test-Ausführungs-Scripts
+Get-Help ./Scripts/Run-Tests.ps1 -Examples
+Get-Help ./Scripts/Run-UITests.ps1 -Examples
+
+# Solution-Generator verstehen
+Get-Help ./Source/Create-Solution.ps1 -Examples
 ```
 
 ## Schnell-Initialisierung (Basis)
@@ -60,41 +88,47 @@ ls -la ./Scripts/
 ## KI-Prompt für Vollinitialisierung
 
 ```
-Bitte führe eine systematische Repository-Analyse durch, um den Inhalt effektiv zu verstehen:
+Bitte führe eine systematische Repository-Analyse des Golden Cage .NET Templates durch:
 
-1. **Projekt-Überblick verstehen:**
-   - Lies README.md für grundlegendes Projektverständnis
-   - Studiere CLAUDE.md für Entwicklungsrichtlinien
+1. **Template-Überblick verstehen:**
+   - Lies README.md für Template-Features und Produktionsmerkmale
+   - Studiere CLAUDE.md für KI-optimierte Entwicklungsrichtlinien
+   - Verstehe die vollautomatisierten PowerShell-Scripts
 
-2. **Architektur und Technologie-Stack analysieren:**
-   - Lies alle Dateien in ./Dokumentation/Architektur/ (CodeStyle, ProgrammierPatterns)
-   - Studiere alle Technologie-Dokumentationen in ./Dokumentation/Technologien/
-   - Verstehe die gewählten Patterns und Technologie-Entscheidungen
+2. **Automatisierungs-Infrastruktur analysieren:**
+   - Analysiere alle Scripts in ./Scripts/ (Build, Database, Testing)
+   - Verstehe Create-Solution.ps1 für automatische Projektgenerierung
+   - Prüfe die Migrations-Dokumentation in ./Source/DBMigrations/README.md
 
-3. **Anforderungen und Kontext erfassen:**
-   - Lies ./Dokumentation/Anforderungen/README.md für das Format
-   - Analysiere alle vorhandenen Anforderungen (R*.md Dateien)
-   - Verstehe die fachlichen und technischen Anforderungen
+3. **Test-Architekturen verstehen:**
+   - Studiere ./Tests/Datenbank/README.md für Datenbanktest-Strategien
+   - Analysiere ./Tests/UI/README.md für Playwright UI-Testing
+   - Verstehe Testcontainers, Page Object Model und Performance-Testing
 
-4. **Code-Struktur vollständig analysieren:**
-   - Untersuche ./Source/Code/ - analysiere alle .cs, .csproj, .sln Dateien
-   - Prüfe ./Source/DBMigrations/ für Datenbankstruktur
-   - Analysiere ./Tests/ für Test-Strategien und -Abdeckung
-   - Betrachte ./Scripts/ für Automatisierungsskripts
+4. **Dokumentations-Standards erfassen:**
+   - Lies ./Dokumentation/Anforderungen/README.md für R00001-*.md Format
+   - Analysiere Architektur-Templates (CodeStyle, ProgrammierPatterns)
+   - Verstehe Standard-Prompts in ./Dokumentation/Commands/
 
-5. **Zusammenhangserkennung:**
-   - Verbinde Anforderungen mit Code-Implementation
-   - Prüfe Konsistenz zwischen Architektur-Dokumentation und tatsächlichem Code
-   - Identifiziere Lücken oder Inkonsistenzen
+5. **Code-Struktur und Template-System:**
+   - Untersuche Source-Struktur mit Create-Solution.ps1 Generator
+   - Prüfe DBMigrations mit 00001-beschreibung.sql Format
+   - Analysiere Test-Strukturen für verschiedene Test-Typen
 
-6. **Status-Report erstellen:**
-   - Gib eine strukturierte Zusammenfassung des Repository-Inhalts
-   - Bewerte den Implementierungsgrad der Anforderungen
-   - Identifiziere nächste Entwicklungsschritte
-   - Weise auf potenzielle Verbesserungen hin
+6. **Produktions-Features bewerten:**
+   - Multi-Browser UI-Testing mit Playwright
+   - Rollback-fähige Datenbank-Migrationen
+   - Cross-Platform PowerShell Automatisierung
+   - KI-optimierte Entwicklungsworkflows
+
+7. **Template-Verwendung verstehen:**
+   - Wie neue Solutions generiert werden
+   - Wie Tests strukturiert und ausgeführt werden
+   - Wie Datenbank-Migrationen verwaltet werden
+   - Wie KI-Assistenten optimal genutzt werden
 
 Verwende die Standard-Prompts aus ./Dokumentation/Commands/ für spezifische Analysen.
-Achte besonders auf die Verbindung zwischen Dokumentation und Implementation.
+Fokussiere auf die produktionsreifen Automatisierungs-Features und KI-Integration.
 ```
 
 ## Einzelne Bereiche initialisieren
@@ -115,8 +149,31 @@ find ./Dokumentation/Architektur -name "*.md" -exec cat {} \;
 find ./Dokumentation/Technologien -name "*.md" -exec cat {} \;
 ```
 
+### Nur Scripts und Automatisierung
+```bash
+ls -la ./Scripts/*.ps1
+cat ./Source/Create-Solution.ps1
+Get-Help ./Scripts/Build.ps1 -Examples
+```
+
+### Nur Test-Architekturen
+```bash
+cat ./Tests/Datenbank/README.md
+cat ./Tests/UI/README.md
+find ./Tests -name "*.cs" | head -10
+```
+
+### Nur Datenbank-System
+```bash
+cat ./Source/DBMigrations/README.md
+Get-Help ./Scripts/Database-Initialize.ps1 -Examples
+Get-Help ./Scripts/Database-Migrate.ps1 -Examples
+```
+
 ## Hinweise
 
-- Führe die Befehle in der angegebenen Reihenfolge aus für optimale KI-Initialisierung
-- Die vollständige Initialisierung gibt der KI den besten Kontext für Entwicklungsaufgaben
-- Für spezifische Aufgaben reicht oft die entsprechende Einzelbereich-Initialisierung
+- **Vollständige Initialisierung**: Für optimalen KI-Kontext alle Befehle ausführen
+- **Template-Features**: Fokus auf produktionsreife Automatisierung und KI-Integration
+- **Spezifische Bereiche**: Für gezielte Aufgaben entsprechende Einzelbereich-Initialisierung
+- **Standard-Prompts**: Nutze vorgefertigte Prompts für Code-Reviews und Qualitätssicherung
+- **Script-Dokumentation**: Alle PowerShell-Scripts haben integrierte Hilfe und Beispiele
