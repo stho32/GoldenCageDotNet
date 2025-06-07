@@ -1,10 +1,12 @@
-# Golden Cage .NET Template
+﻿# Golden Cage .NET Template
 
 Ein vollständiges, standardisiertes Template für .NET-Anwendungen mit KI-optimierter Entwicklung, automatisierten Scripts und umfassender Dokumentation.
 
 ## Überblick
 
 Der "Golden Cage" ist ein produktionsreifes Verzeichnis-Template, das eine bewährte Struktur für .NET-Projekte bereitstellt. Jeder Hauptordner behandelt einen wichtigen Aspekt der Anwendungsentwicklung und bietet eine solide Grundlage für KI-gestützte Entwicklung mit vorgefertigten Scripts und Dokumentationen.
+
+![alt text](image.png)
 
 ## Verzeichnisstruktur
 
